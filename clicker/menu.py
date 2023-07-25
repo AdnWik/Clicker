@@ -3,7 +3,17 @@ def show_menu(menu_options: list,
               start_message='',
               end_message=''
               ) -> str:
-    # TODO:
+    """"Create menu with numbered options and optionally submenu name, start and stop message
+
+    Args:
+        menu_options (list): options to show and numbered
+        submenu_name (str, optional): submenu name Defaults to ''.
+        start_message (str, optional): message before numbered options. Defaults to ''.
+        end_message (str, optional): message after numbered options. Defaults to ''.
+
+    Returns:
+        str: _description_
+    """
     if submenu_name:
         result = submenu_name.upper().center(50, '-') + '\n'
     else:
