@@ -1,0 +1,17 @@
+{
+    "youtube": [
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 100,
+                "y": 200
+            }
+        },
+        {
+            "eventType": "press_mouse_button",
+            "payload": {
+                "button": "left"
+            }
+        }
+    ]
+}
