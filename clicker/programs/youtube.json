@@ -8,6 +8,32 @@
             }
         },
         {
+            "eventType": "wait",
+            "payload": {
+                "seconds": 1
+            }
+        },
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 200,
+                "y": 200
+            }
+        },
+        {
+            "eventType": "wait",
+            "payload": {
+                "seconds": 1
+            }
+        },
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 300,
+                "y": 600
+            }
+        },
+        {
             "eventType": "press_mouse_button",
             "payload": {
                 "button": "left"

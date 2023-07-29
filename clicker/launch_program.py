@@ -5,11 +5,18 @@ def launch_program(eventType, **kwargs):
     mouse = Controller()
 
     if eventType == 'set_mouse_position':
-        x = getattr(kwargs, 'x')
-        y = getattr(kwargs, 'y')
+        x = kwargs['x']
+        y = kwargs['y']
 
         mouse.position = (x, y)
         logging.info('Now we have moved it to {0}'.format(mouse.position))
+
+        # Move pointer relative to current position
+        mouse.move(x, y)
+
+    elif eventType == 'wait':
+        seconds = kwargs['seconds']
+        logging.info('Wait {0} seconds'.format(seconds))
 
         # Move pointer relative to current position
         mouse.move(x, y)
