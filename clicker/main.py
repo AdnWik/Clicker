@@ -41,9 +41,7 @@ while True:
                 for program_name, data in content.items():
                     print(program_name)
                     for step in data:
-                        eventType = step['eventType']
-                        kwargs = step['payload']
-                        #launch_program(step['eventType'], step['payload'])
+                        launch_program(step['eventType'], **step['payload'])
 
     else:
         break
