@@ -16,8 +16,8 @@
         {
             "eventType": "set_mouse_position",
             "payload": {
-                "x": 200,
-                "y": 200
+                "x": 1000,
+                "y": 600
             }
         },
         {
@@ -29,8 +29,8 @@
         {
             "eventType": "set_mouse_position",
             "payload": {
-                "x": 300,
-                "y": 600
+                "x": 700,
+                "y": 50
             }
         },
         {
