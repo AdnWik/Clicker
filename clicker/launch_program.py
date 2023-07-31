@@ -36,18 +36,6 @@ def launch_program(eventType, **kwargs):
         type_string = kwargs['type']
         keyboard.type(type_string)
 
-
-
-
-'''
-    # Press and release
-    mouse.press(Button.left)
-    mouse.release(Button.left)
-
-    # Double click; this is different from pressing and releasing
-    # twice on macOS
-    mouse.click(Button.left, 2)
-
-    # Scroll two steps down
-    mouse.scroll(0, 2)
-'''
+    elif eventType == 'mouse_scroll':
+        scroll = kwargs['scroll']
+        mouse.scroll(0, scroll)
