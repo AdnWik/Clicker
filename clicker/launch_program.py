@@ -14,9 +14,6 @@ def launch_program(eventType, **kwargs):
         mouse.position = (x, y)
         logging.info('Now we have moved it to {0}'.format(mouse.position))
 
-        # Move pointer relative to current position
-        mouse.move(x, y)
-
     elif eventType == 'wait':
         seconds = kwargs['seconds']
         logging.info('Wait {0} seconds'.format(seconds))
@@ -39,3 +36,8 @@ def launch_program(eventType, **kwargs):
     elif eventType == 'mouse_scroll':
         scroll = kwargs['scroll']
         mouse.scroll(0, scroll)
+
+    elif eventType == 'keyboard_press':
+        button = kwargs['button']
+        keyboard.press(button)
+        keyboard.release(button)

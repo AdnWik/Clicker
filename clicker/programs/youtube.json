@@ -3,40 +3,64 @@
         {
             "eventType": "set_mouse_position",
             "payload": {
-                "x": 100,
-                "y": 200
-            }
-        },
-        {
-            "eventType": "wait",
-            "payload": {
-                "seconds": 1
-            }
-        },
-        {
-            "eventType": "set_mouse_position",
-            "payload": {
-                "x": 1000,
-                "y": 600
-            }
-        },
-        {
-            "eventType": "wait",
-            "payload": {
-                "seconds": 1
-            }
-        },
-        {
-            "eventType": "set_mouse_position",
-            "payload": {
-                "x": 700,
-                "y": 50
+                "x": 666,
+                "y": 873
             }
         },
         {
             "eventType": "press_mouse_button",
             "payload": {
                 "button": "left"
+            }
+        },
+        {
+            "eventType": "wait",
+            "payload": {
+                "seconds": 5
+            }
+        },
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 281,
+                "y": 91
+            }
+        },
+        {
+            "eventType": "press_mouse_button",
+            "payload": {
+                "button": "left"
+            }
+        },
+        {
+            "eventType": "wait",
+            "payload": {
+                "seconds": 5
+            }
+        },
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 134,
+                "y": 727
+            }
+        },
+        {
+            "eventType": "press_mouse_button",
+            "payload": {
+                "button": "left"
+            }
+        },
+        {
+            "eventType": "keyboard_type",
+            "payload": {
+                "type": "Kacper Sierdadźński"
+            }
+        },
+        {
+            "eventType": "keyboard_press",
+            "payload": {
+                "button": "Enter"
             }
         }
     ]
