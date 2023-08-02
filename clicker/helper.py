@@ -1,3 +1,4 @@
+"""Read mouse position every two seconds"""
 from pynput.mouse import Controller
 from time import sleep
 

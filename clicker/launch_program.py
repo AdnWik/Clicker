@@ -4,6 +4,7 @@ import pynput
 
 
 def launch_program(eventType, **kwargs):
+    """ TODO: """
     mouse = pynput.mouse.Controller()
     keyboard = pynput.keyboard.Controller()
 
@@ -12,11 +13,11 @@ def launch_program(eventType, **kwargs):
         y = kwargs['y']
 
         mouse.position = (x, y)
-        logging.info('Now we have moved it to {0}'.format(mouse.position))
+        logging.info('Now we have moved it to %s', mouse.position)
 
     elif eventType == 'wait':
         seconds = kwargs['seconds']
-        logging.info('Wait {0} seconds'.format(seconds))
+        logging.info('Wait %s seconds', seconds)
         sec = kwargs['seconds']
         sleep(sec)
 
@@ -39,5 +40,7 @@ def launch_program(eventType, **kwargs):
 
     elif eventType == 'keyboard_press':
         button = kwargs['button']
-        keyboard.press(button)
-        keyboard.release(button)
+        if button == 'enter':
+            keyboard.press(pynput.keyboard.Key.enter)
+            keyboard.release(pynput.keyboard.Key.enter)
+            logging.info('Press key %s', button)
