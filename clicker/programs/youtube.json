@@ -60,7 +60,7 @@
         {
             "eventType": "keyboard_press",
             "payload": {
-                "button": "Enter"
+                "button": "enter"
             }
         }
     ]
