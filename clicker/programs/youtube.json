@@ -1,0 +1,105 @@
+{
+    "youtube": [
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 1018,
+                "y": 1431
+            }
+        },
+        {
+            "eventType": "press_mouse_button",
+            "payload": {
+                "button": "left"
+            }
+        },
+        {
+            "eventType": "wait",
+            "payload": {
+                "seconds": 5
+            }
+        },
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 309,
+                "y": 94
+            }
+        },
+        {
+            "eventType": "press_mouse_button",
+            "payload": {
+                "button": "left"
+            }
+        },
+        {
+            "eventType": "wait",
+            "payload": {
+                "seconds": 5
+            }
+        },
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 1628,
+                "y": 151
+            }
+        },
+        {
+            "eventType": "press_mouse_button",
+            "payload": {
+                "button": "left"
+            }
+        },
+        {
+            "eventType": "keyboard_type",
+            "payload": {
+                "type": "Kacper Sierdadźński"
+            }
+        },
+        {
+            "eventType": "keyboard_press",
+            "payload": {
+                "button": "enter"
+            }
+        },
+        {
+            "eventType": "wait",
+            "payload": {
+                "seconds": 5
+            }
+        },
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 1496,
+                "y": 820
+            }
+        },
+        {
+            "eventType": "press_mouse_button",
+            "payload": {
+                "button": "left"
+            }
+        },
+        {
+            "eventType": "wait",
+            "payload": {
+                "seconds": 10
+            }
+        },
+        {
+            "eventType": "set_mouse_position",
+            "payload": {
+                "x": 1590,
+                "y": 1350
+            }
+        },
+        {
+            "eventType": "press_mouse_button",
+            "payload": {
+                "button": "left"
+            }
+        }
+    ]
+}
