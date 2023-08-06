@@ -1,11 +1,10 @@
 """Read mouse position every two seconds"""
-from pynput.mouse import Controller
-from time import sleep
-
-mouse = Controller()
+from pynput import mouse
 
 
-while True:
-    # Read pointer position
-    print('The current pointer position is {0}'.format(mouse.position))
-    sleep(2)
+def on_click(x, y, button, pressed):
+    print(f'x: {x} y: {y}')
+
+
+with mouse.Listener(on_click=on_click) as listner:
+    listner.join()
