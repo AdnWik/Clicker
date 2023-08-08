@@ -3,6 +3,19 @@ from time import sleep
 import pynput
 
 
+class Controler:
+
+    def __init__(self) -> None:
+        self.mouse = pynput.mouse.Controller()
+        self.keyboard = pynput.keyboard.Controller()
+
+    def click_mouse_button(self, button):
+        self.mouse.press(button)
+        sleep(0.1)
+        self.mouse.release(button)
+
+
+
 def launch_program(eventType, **kwargs):
     """ TODO: """
     mouse = pynput.mouse.Controller()
