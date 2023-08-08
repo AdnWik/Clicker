@@ -1,4 +1,3 @@
-import logging
 from pynput import mouse
 
 
@@ -27,12 +26,3 @@ with mouse.Listener(
         on_scroll=on_scroll) as listener:
     listener.join()
     print(listener)
-
-"""
-# ...or, in a non-blocking fashion:
-listener = mouse.Listener(
-    on_move=on_move,
-    on_click=on_click,
-    on_scroll=on_scroll)
-listener.start()
-"""
