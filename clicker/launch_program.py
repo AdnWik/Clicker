@@ -9,6 +9,9 @@ class Controler:
         self.mouse = pynput.mouse.Controller()
         self.keyboard = pynput.keyboard.Controller()
 
+    def set_mouse_possition(self, x, y):
+        self.mouse.position(x, y)
+
     def click_mouse_button(self, button):
         self.mouse.press(button)
         sleep(0.1)
