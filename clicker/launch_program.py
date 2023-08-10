@@ -17,6 +17,12 @@ class Controler:
         sleep(0.1)
         self.mouse.release(button)
 
+    def move_and_click(self, x, y, button):
+        self.mouse.position(x, y)
+        self.mouse.press(button)
+        sleep(0.1)
+        self.mouse.release(button)
+
 
 
 def launch_program(eventType, **kwargs):
