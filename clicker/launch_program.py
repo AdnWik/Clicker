@@ -23,6 +23,9 @@ class Controler:
         sleep(0.1)
         self.mouse.release(button)
 
+    def typing(self, text):
+        self.keyboard.type(text)
+
 
 
 def launch_program(eventType, **kwargs):
