@@ -31,6 +31,13 @@ class Controler:
         sleep(0.1)
         self.keyboard.release(button)
 
+    def keyboard_typing_and_click(self, text, button):
+        self.keyboard.type(text)
+        sleep(0.1)
+        self.keyboard.press(button)
+        sleep(0.1)
+        self.keyboard.release(button)
+
 
 def launch_program(eventType, **kwargs):
     """ TODO: """
