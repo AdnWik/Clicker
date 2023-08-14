@@ -12,6 +12,9 @@ class Controler:
     def set_mouse_possition(self, x, y):
         self.mouse.position(x, y)
 
+    def mouse_scroll(self, scroll):
+        self.mouse.scroll(0, scroll)
+
     def click_mouse_button(self, button):
         self.mouse.press(button)
         sleep(0.1)
