@@ -9,7 +9,13 @@ class Controler:
         self.mouse = pynput.mouse.Controller()
         self.keyboard = pynput.keyboard.Controller()
 
-    def set_mouse_possition(self, x, y):
+    def set_mouse_position(self, x: int, y: int):
+        """Set mouse position in pixels
+
+        Args:
+            x (int): x coordinates in pixels
+            y (int): y coordinates in pixels
+        """
         self.mouse.position(x, y)
 
     def mouse_scroll(self, scroll):
