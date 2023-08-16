@@ -20,7 +20,7 @@ class Controler:
 
     def mouse_scroll(self, scroll):
         self.mouse.scroll(0, scroll)
-
+        
     def click_mouse_button(self, button: str):
         """Click mouse button
 
