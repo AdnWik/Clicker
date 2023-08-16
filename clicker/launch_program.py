@@ -21,7 +21,12 @@ class Controler:
     def mouse_scroll(self, scroll):
         self.mouse.scroll(0, scroll)
 
-    def click_mouse_button(self, button):
+    def click_mouse_button(self, button: str):
+        """Click mouse button
+
+        Args:
+            button (str): Mouse button to click
+        """
         self.mouse.press(button)
         sleep(0.1)
         self.mouse.release(button)
