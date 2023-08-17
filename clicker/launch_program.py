@@ -20,7 +20,7 @@ class Controler:
 
     def mouse_scroll(self, scroll):
         self.mouse.scroll(0, scroll)
-        
+
     def click_mouse_button(self, button: str):
         """Click mouse button
 
@@ -32,10 +32,15 @@ class Controler:
         self.mouse.release(button)
 
     def move_and_click(self, x, y, button):
-        self.mouse.position(x, y)
-        self.mouse.press(button)
-        sleep(0.1)
-        self.mouse.release(button)
+        """Move mouse and click button
+
+        Args:
+            x (_type_): x coordinates in pixels
+            y (_type_): y coordinates in pixels
+            button (_type_): mouse button to click
+        """
+        self.set_mouse_position(x, y)
+        self.click_mouse_button(button)
 
     def keyboard_typing(self, text):
         self.keyboard.type(text)
