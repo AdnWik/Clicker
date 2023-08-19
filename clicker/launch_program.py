@@ -42,7 +42,12 @@ class Controler:
         self.set_mouse_position(x, y)
         self.click_mouse_button(button)
 
-    def keyboard_typing(self, text):
+    def keyboard_typing(self, text: str):
+        """Typing on keyboard
+
+        Args:
+            text (str): text to type
+        """
         self.keyboard.type(text)
 
     def keyboard_click_button(self, button):
