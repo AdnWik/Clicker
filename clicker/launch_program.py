@@ -50,7 +50,12 @@ class Controler:
         """
         self.keyboard.type(text)
 
-    def keyboard_click_button(self, button):
+    def keyboard_click_button(self, button: str):
+        """Click button on keyboard
+
+        Args:
+            button (str): button name
+        """
         self.keyboard.press(button)
         sleep(0.1)
         self.keyboard.release(button)
