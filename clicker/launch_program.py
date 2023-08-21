@@ -60,7 +60,13 @@ class Controler:
         sleep(0.1)
         self.keyboard.release(button)
 
-    def keyboard_typing_and_click(self, text, button):
+    def keyboard_typing_and_click(self, text: str, button: str):
+        """Typing on keyboard and click button
+
+        Args:
+            text (str): text to typing
+            button (str): button to click
+        """
         self.keyboard_typing(text)
         self.keyboard_click_button(button)
 
