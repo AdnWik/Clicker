@@ -4,6 +4,8 @@ import pynput
 
 
 class Controler:
+    """Controler for mouse and keyboard
+    """
 
     def __init__(self) -> None:
         self.mouse = pynput.mouse.Controller()
