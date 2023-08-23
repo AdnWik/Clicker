@@ -20,7 +20,12 @@ class Controler:
         """
         self.mouse.position(x, y)
 
-    def mouse_scroll(self, scroll):
+    def mouse_scroll(self, scroll: int):
+        """Scroll on mouse
+
+        Args:
+            scroll (int): scroll value
+        """
         self.mouse.scroll(0, scroll)
 
     def click_mouse_button(self, button: str):
