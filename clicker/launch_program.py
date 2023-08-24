@@ -1,3 +1,4 @@
+"""Controler class"""
 import logging
 from time import sleep
 import pynput
