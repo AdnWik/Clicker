@@ -19,7 +19,7 @@ class Controler:
             x (int): x coordinates in pixels
             y (int): y coordinates in pixels
         """
-        self.mouse.position(x, y)
+        self.mouse.position = (x, y)
 
     def mouse_scroll(self, scroll: int):
         """Scroll on mouse
