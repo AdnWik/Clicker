@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 import logging
 from menu import show_menu
-from launch_program import launch_program
+from launch_program import launch_program, Controler
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -11,6 +11,7 @@ FOLDER = "clicker"
 FOLDER_NAME = "programs"
 FOLDER_PATH = Path.joinpath(CUR_DIR, FOLDER)
 FOLDER_PATH = Path.joinpath(FOLDER_PATH, FOLDER_NAME)
+controler = Controler()
 
 print(' Welcome in Clicker! '.center(50, '='))
 while True:
