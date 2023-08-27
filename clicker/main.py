@@ -3,6 +3,7 @@ import json
 import logging
 from menu import show_menu
 from launch_program import launch_program, Controler
+from process import Process
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -11,7 +12,6 @@ FOLDER = "clicker"
 FOLDER_NAME = "programs"
 FOLDER_PATH = Path.joinpath(CUR_DIR, FOLDER)
 FOLDER_PATH = Path.joinpath(FOLDER_PATH, FOLDER_NAME)
-controler = Controler()
 
 print(' Welcome in Clicker! '.center(50, '='))
 while True:
@@ -35,14 +35,9 @@ while True:
         if user_choice_idx in range(0, len(options)):
             file_name = f'{options[user_choice_idx]}.json'
             file_path = Path.joinpath(FOLDER_PATH, file_name)
-            with open(file_path, 'r', encoding='utf-8') as data:
-                content = data.read()
-                content = json.loads(content)
-
-                for program_name, data in content.items():
-                    print(program_name)
-                    for step in data:
-                        launch_program(step['eventType'], **step['payload'])
+            process = Process(file_path)
+            process.load_steps()
+            process.start()
 
     else:
         break
