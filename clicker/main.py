@@ -1,8 +1,6 @@
 from pathlib import Path
-import json
 import logging
 from menu import show_menu
-from launch_program import launch_program, Controler
 from process import Process
 
 logging.basicConfig(level=logging.DEBUG)
@@ -35,6 +33,7 @@ while True:
         if user_choice_idx in range(0, len(options)):
             file_name = f'{options[user_choice_idx]}.json'
             file_path = Path.joinpath(FOLDER_PATH, file_name)
+
             process = Process(file_path)
             process.load_steps()
             process.start()
