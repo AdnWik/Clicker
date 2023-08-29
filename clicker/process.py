@@ -15,7 +15,11 @@ class Process:
 
     def start(self):
         options = {
-            'set_mouse_position': self.controller.set_mouse_position
+            'set_mouse_position': self.controller.set_mouse_position,
+            'press_mouse_button': self.controller.click_mouse_button,
+            'wait': self.controller.wait,
+            'keyboard_type': self.controller.keyboard_typing,
+            'keyboard_press': self.controller.keyboard_click_button
         }
 
         for program_name in self.steps:
