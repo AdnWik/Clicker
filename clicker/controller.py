@@ -37,15 +37,15 @@ class Controller:
         """
         self.mouse.scroll(0, scroll)
 
-    def click_mouse_button(self, button: str):
+    def click_mouse_button(self, button):
         """Click mouse button
 
         Args:
             button (str): Mouse button to click
         """
-        self.mouse.press(button)
+        self.mouse.press(getattr(pynput.mouse.Button, button))
         sleep(0.1)
-        self.mouse.release(button)
+        self.mouse.release(getattr(pynput.mouse.Button, button))
 
     def move_and_click(self, x, y, button):
         """Move mouse and click button
