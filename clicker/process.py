@@ -2,6 +2,7 @@ import json
 import logging
 from controller import Controller
 
+
 class Process:
 
     def __init__(self, file_path) -> None:

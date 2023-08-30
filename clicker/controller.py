@@ -58,7 +58,7 @@ class Controller:
         self.set_mouse_position(x, y)
         self.click_mouse_button(button)
 
-    def keyboard_typing(self, text: str):
+    def keyboard_typing(self, text):
         """Typing on keyboard
 
         Args:
@@ -66,15 +66,15 @@ class Controller:
         """
         self.keyboard.type(text)
 
-    def keyboard_click_button(self, button: str):
+    def keyboard_click_button(self, button):
         """Click button on keyboard
 
         Args:
             button (str): button name
         """
-        self.keyboard.press(button)
+        self.keyboard.press(getattr(pynput.keyboard.Key, button))
         sleep(0.1)
-        self.keyboard.release(button)
+        self.keyboard.release(getattr(pynput.keyboard.Key, button))
 
     def keyboard_typing_and_click(self, text: str, button: str):
         """Typing on keyboard and click button
