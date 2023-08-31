@@ -1,4 +1,4 @@
-"""Controler class"""
+"""Controller class"""
 from time import sleep
 import pynput
 
@@ -37,7 +37,7 @@ class Controller:
         """
         self.mouse.scroll(0, scroll)
 
-    def click_mouse_button(self, button):
+    def click_mouse_button(self, button :str):
         """Click mouse button
 
         Args:
@@ -47,13 +47,13 @@ class Controller:
         sleep(0.1)
         self.mouse.release(getattr(pynput.mouse.Button, button))
 
-    def move_and_click(self, x, y, button):
+    def move_and_click(self, x: int, y: int, button: str):
         """Move mouse and click button
 
         Args:
-            x (_type_): x coordinates in pixels
-            y (_type_): y coordinates in pixels
-            button (_type_): mouse button to click
+            x (int): x coordinates in pixels
+            y (int): y coordinates in pixels
+            button (str): mouse button to click
         """
         self.set_mouse_position(x, y)
         self.click_mouse_button(button)
@@ -72,9 +72,9 @@ class Controller:
         Args:
             button (str): button name
         """
-        self.keyboard.press(button)
+        self.keyboard.press(getattr(pynput.keyboard.Key, button))
         sleep(0.1)
-        self.keyboard.release(button)
+        self.keyboard.release(getattr(pynput.keyboard.Key, button))
 
     def keyboard_typing_and_click(self, text: str, button: str):
         """Typing on keyboard and click button

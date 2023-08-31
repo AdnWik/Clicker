@@ -54,7 +54,7 @@
         {
             "eventType": "keyboard_type",
             "payload": {
-                "type": "Kacper Sierdadźński"
+                "text": "Kacper Sierdadźński"
             }
         },
         {
