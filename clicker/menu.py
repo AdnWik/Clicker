@@ -1,3 +1,6 @@
+"""Menu function"""
+
+
 def show_menu(menu_options: list,
               submenu_name='',
               start_message='',
