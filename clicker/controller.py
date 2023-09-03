@@ -37,7 +37,7 @@ class Controller:
         """
         self.mouse.scroll(0, scroll)
 
-    def click_mouse_button(self, button :str):
+    def click_mouse_button(self, button: str):
         """Click mouse button
 
         Args:

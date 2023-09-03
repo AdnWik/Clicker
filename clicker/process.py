@@ -34,7 +34,9 @@ class Process:
             for steps in self.steps[program_name]:
                 try:
                     options[steps["eventType"]](**steps["payload"])
-                    logging.debug('{} - {}'.format(steps["eventType"], steps["payload"]))
+                    logging.debug('%s - %s',
+                                  steps["eventType"],
+                                  steps["payload"])
                 except KeyError as error:
-                    logging.debug('KeyError: {}'.format(error))
+                    logging.debug('KeyError: %s', error)
                     break

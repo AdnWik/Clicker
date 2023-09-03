@@ -6,13 +6,14 @@ def show_menu(menu_options: list,
               start_message='',
               end_message=''
               ) -> str:
-    """"Create menu with numbered options and optionally submenu name, start and stop message
+    """"Create menu with numbered options and optionally submenu name,
+        start and stop message
 
     Args:
         menu_options (list): options to show and numbered
-        submenu_name (str, optional): submenu name Defaults to ''.
-        start_message (str, optional): message before numbered options. Defaults to ''.
-        end_message (str, optional): message after numbered options. Defaults to ''.
+        submenu_name (str, optional): submenu name.
+        start_message (str, optional): message before numbered options.
+        end_message (str, optional): message after numbered options.
 
     Returns:
         str: _description_
