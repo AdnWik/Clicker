@@ -1,3 +1,4 @@
+"""Main"""
 from pathlib import Path
 import logging
 from menu import show_menu
